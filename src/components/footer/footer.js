@@ -34,7 +34,8 @@ export function Footer() {
               href="./#"
               className={classNames({ selected: filterTitle.key === filter })}
               onClick={() => filterSelect(filterTitle.key)}
-              data-testid={`filter-${filterTitle.value}`}
+              /* good catch: activate me for testing */
+              /* data-testid={`filter-${filterTitle.value}`} */
             >
               {filterTitle.value}
             </a>
