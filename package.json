@@ -12,8 +12,9 @@
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "test": "npm run test:unit",
     "test:unit": "react-scripts test --watchAll=false",
-    "test:e2e": "start-server-and-test start http://localhost:9300 cypress",
-    "cypress": "cypress run"
+    "test:e2e": "start-server-and-test start http://localhost:9300 cy:run",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "dependencies": {
     "axios": "^0.19.2",
