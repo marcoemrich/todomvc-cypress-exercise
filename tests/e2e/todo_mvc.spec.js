@@ -9,7 +9,7 @@ const ITEM1 = 'Find the Plans';
 const ITEM2 = 'Save World';
 const ITEM3 = 'Get out of my house';
 
-let add3Items = () => {
+const add3Items = () => {
   // TODO
 };
 
