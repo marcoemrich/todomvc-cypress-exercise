@@ -12,7 +12,7 @@
     "lint": "eslint 'src/**/*.{js,jsx}'",
     "test": "npm run test:unit",
     "test:unit": "react-scripts test --watchAll=false",
-    "test:e2e": "start-server-and-test start http://localhost:9300 cy:run",
+    "test:e2e": "start-server-and-test start http://localhost:9300 cy:open",
     "cy:run": "cypress run",
     "cy:open": "cypress open"
   },

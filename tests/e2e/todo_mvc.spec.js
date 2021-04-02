@@ -18,8 +18,13 @@ describe('TODO MVC', () => {
     cy.visit('/');
   });
   describe('New todo', () => {
-    it('it should show headline "todos"');
-    it('it should create new todo');
+    it('it should show headline "todos"', () => {
+      cy.contains('h1', 'todos');
+    });
+    it('it should create new todo', () => {
+      cy.get(TODO_CREATE).type(ITEM1).type('{enter}');
+      cy.get(TODO_NAME).should('contain', ITEM1);
+    });
     it('it should create new todo that is not completed');
 
     it('it should create 3 new todos (verify number and last entry)');
