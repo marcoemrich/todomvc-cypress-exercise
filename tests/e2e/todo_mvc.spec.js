@@ -18,12 +18,12 @@ describe('TODO MVC', () => {
     cy.visit('/');
   });
   describe('New todo', () => {
-    it('it should show headline "todos"');
-    it('it should create new todo');
-    it('it should create new todo that is not completed');
+    it('should show headline "todos"');
+    it('should create new todo');
+    it('should create new todo that is not completed');
 
-    it('it should create 3 new todos (verify number and last entry)');
-    it('it should show correct todo count)');
+    it('should create 3 new todos (verify number and last entry)');
+    it('should show correct todo count)');
   });
 
   describe('Toggle', () => {
